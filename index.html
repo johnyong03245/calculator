@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+  <div class="topnav">
+    <h1>Calculator</h1>
+  </div><br>
+  
+  
+  <table class="calculator-content">
+    <tr>
+        <td colspan="4" class="calculator-result">
+          <input type="text" id="result" readonly>
+        </td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(7)">7</button></td>
+      <td><button onclick="appendNumber(8)">8</button></td>
+      <td><button onclick="appendNumber(9)">9</button></td>
+      <td><button onclick="appendOperator('+')">+</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(4)">4</button></td>
+      <td><button onclick="appendNumber(5)">5</button></td>
+      <td><button onclick="appendNumber(6)">6</button></td>
+      <td><button onclick="appendOperator('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(1)">1</button></td>
+      <td><button onclick="appendNumber(2)">2</button></td>
+      <td><button onclick="appendNumber(3)">3</button></td>
+      <td><button onclick="appendOperator('*')">*</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(0)">0</button></td>
+      <td><button onclick="clearResult()">C</button></td>
+      <td><button onclick="calculateResult()">=</button></td>
+      <td><button onclick="appendOperator('/')">/</button></td>
+    </tr>
+  </table>
+
+</body>
+</html>
